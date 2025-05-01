@@ -452,3 +452,10 @@ footer {
 footer p {
   text-align: center;
 }
+
+.bear-img {
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
