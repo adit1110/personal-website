@@ -361,6 +361,15 @@ section {
   box-sizing: border-box;
 }
 
+.project-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+
+
+
 .section-container {
   display: flex;
   flex-wrap: wrap;
@@ -452,6 +461,18 @@ article .icon {
   width: 90%;
   height: 90%;
 }
+
+.project-img,
+.Sudoku-img,
+.bear-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
 
 .project-title {
   margin: 1rem;
