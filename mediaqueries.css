@@ -5,94 +5,156 @@
   #hamburger-nav {
     display: flex;
   }
-}
 
-@media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
+  section {
+    margin: 0 1rem;
+    padding-top: 2vh;
+    height: fit-content;
   }
-  #hamburger-nav {
-    display: flex;
-  }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
+
   #profile,
   .section-container {
-    display: block;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
   }
+
   .arrow {
     display: none;
   }
-  section,
-  .section-container {
-    height: fit-content;
-  }
-  section {
-    margin: 0 5%;
-  }
+
   .section__pic-container {
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
   }
+
   .about-containers {
     margin-top: 0;
+  }
+
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-containers,
+  .article-container,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .details-container {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .project-img,
+  .Sudoku-img,
+  .bear-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .details-container.color-container {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  /* ✅ Add this block at the end */
+  .about-containers,
+  .details-container.color-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .details-container {
+    margin: 0 auto;
+    max-width: 95%;
+  }
+
+  .section-container {
+    padding: 0 1rem;
   }
 }
 
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 40vh;
+    height: auto;
   }
+
   #profile {
-    height: 83vh;
-    margin-bottom: 0;
-  }
-  article {
-    font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    gap: 1rem;
     margin-bottom: 2rem;
   }
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
+
+  .section__pic-container {
+    width: 60vw;
+    height: auto;
+    margin: 0 auto;
+    aspect-ratio: 1/1;
   }
-  .contact-info-container {
-    margin: 0;
-  }
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
-  .experience-sub-title {
+
+  .section__text__p2 {
     font-size: 1.25rem;
   }
-  .logo {
-    font-size: 1.5rem;
+
+  .title {
+    font-size: 2rem;
   }
+
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
   }
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
+
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
   }
-  .section__text__p2 {
+
+  .experience-sub-title {
     font-size: 1.25rem;
   }
-  .title {
-    font-size: 2rem;
+
+  .logo {
+    font-size: 1.5rem;
   }
+
   .text-container {
     text-align: justify;
+    line-height: 1.5;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
   }
 }
