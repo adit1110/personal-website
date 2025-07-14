@@ -96,6 +96,18 @@
   .section-container {
     padding: 0 1rem;
   }
+
+  .article-container {
+  justify-items: center;
+  text-align: center;
+}
+
+article {
+  flex-direction: column;
+  align-items: center;
+}
+
+  
 }
 
 @media screen and (max-width: 600px) {
