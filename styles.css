@@ -353,12 +353,19 @@ section {
 .details-container {
   padding: 1.5rem;
   background: white;
-  border-radius: 2rem;
-  border: rgb(163, 163, 163) 0.1rem solid;
+  border-radius: 16px;
+  border: 1px solid rgb(210, 210, 210);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
   width: 100%;
-  max-width: 500px;  /* ✅ cap the width on desktop */
+  max-width: 500px;
   box-sizing: border-box;
+}
+
+.details-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
 .project-img-container {
@@ -408,11 +415,13 @@ section {
 
 .article-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* force 2 equal columns */
-  gap: 1.5rem 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem 2rem;
   justify-items: center;
+  justify-content: center;
   text-align: center;
 }
+
 
 
 article {
@@ -452,9 +461,18 @@ article .icon {
 }
 
 .color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  border: 1px solid rgb(210, 210, 210);
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.color-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
 
 .project-img {
   border-radius: 2rem;
@@ -490,6 +508,58 @@ article .icon {
   border-radius: 2rem;
   width: 90%;
   height: auto;
+}
+
+
+/* Experience Section */
+
+
+.details-container ul {
+  text-align: left;
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.details-container li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.work-card {
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.work-card ul {
+  padding-left: 1.5rem;
+  margin-top: 0.75rem;
+}
+
+.work-card li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.work-sub {
+  font-size: 1rem;
+  font-weight: 500;
+  color: gray;
+}
+
+#work-experience {
+  background-color: #f9f9f9;
+  padding: 4vh 0;
 }
 
 
