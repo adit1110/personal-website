@@ -14,7 +14,9 @@
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#experience"> Experience</a></li>
+                <li><a href="#work-experience"> Work Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -31,6 +33,7 @@
         <div class="menu-links">
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
             <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#work-experience" onclick="toggleMenu()">Work Experience</a></li>
             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -92,7 +95,7 @@
                   class="icon"
                 />
                 <h3>Experience</h3>
-                <p><br /></p> <!-- Add experience here -->
+                <p>2+ Technical Roles<br />Full-Stack & Frontend Development</p>
               </div>
               <div class="details-container">
                 <img
@@ -159,17 +162,6 @@
                     class="icon"
                   />
                   <div>
-                    <h3>Python</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
                     <h3>JavaScript</h3>
                     <p>Basic</p>
                   </div>
@@ -182,17 +174,6 @@
                   />
                   <div>
                     <h3>C</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>C++</h3>
                     <p>Intermediate</p>
                   </div>
                 </article>
@@ -256,6 +237,45 @@
           onclick="location.href='#projects'"
         />
       </section>
+
+<section id="work-experience">
+  <p class="section__text__p1">Where I've Worked</p>
+  <h1 class="title">Professional Experience</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+
+      <div class="details-container work-card">
+        <h2 class="experience-sub-title" style="display: flex; align-items: center; gap: 0.5rem;">
+          <img src="./assets/savify-icon.png" class="icon" style="height: 1.5rem; vertical-align: middle;" />
+          &nbsp;Savify <span class="work-sub">(Fintech Startup)</span>
+        </h2>
+        <p><strong>Full-Stack Software Engineer</strong> &nbsp; | &nbsp; June 2025 – Present</p>
+        <ul>
+          <li>Contributing to a student-focused savings platform using Python, React.js, and Flask.</li>
+          <li>Refactored frontend structure into modular, maintainable React components with clean styling.</li>
+          <li>Helped define infrastructure and coding standards across a collaborative student team.</li>
+        </ul>
+      </div>
+
+      <div class="details-container work-card">
+        <h2 class="experience-sub-title">
+          <img src="./assets/tfsi-icon.png" class="icon" style="height: 1.2rem; vertical-align: middle;" />
+          &nbsp;Tech for Social Impact
+        </h2>
+        <p><strong>Frontend Developer (Volunteer)</strong> &nbsp; | &nbsp; Feb 2025 – Apr 2025</p>
+        <ul>
+          <li>Built the frontend for a grant dashboard web app for Fund Homecare Canada using React.</li>
+          <li>Implemented authentication and role-based access control with admin/user permissions.</li>
+          <li>Worked with a cross-functional team to ship a polished, scalable MVP to production.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
+</section>
+
+<section id="projects">
       <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
